@@ -28,7 +28,7 @@ uninstalling jenv:
 1.  Remove any lines added to your shell's configuration file.
 
     For example, if you use bash remove the following line from your ~/.bashrc:
-  \`source /usr/share/jenv-git/init-jenv.sh\`
+    \`source /usr/share/jenv-git/init-jenv.sh\`
 
 2.  Restart your terminal or re-source your shell configuration file.
 
@@ -38,3 +38,4 @@ uninstalling jenv:
   "
 }
 
+# vim:set ts=2 sw=2 et:

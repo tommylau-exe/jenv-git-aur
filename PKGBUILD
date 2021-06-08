@@ -16,12 +16,12 @@ source=("$pkgname::git+https://github.com/jenv/jenv.git" 'init-jenv.sh')
 md5sums=('SKIP' 'ef913922693b155cb4e0230022c5d03b')
 
 pkgver() {
-	cd "$srcdir/$pkgname"
-	printf "%s" "$(git describe --long --tags | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
+  cd "$srcdir/$pkgname"
+  printf "%s" "$(git describe --long --tags | sed 's/\([^-]*-\)g/r\1/;s/-/./g')"
 }
 
 package() {
-	cd "$srcdir"
+  cd "$srcdir"
 
   # install one-off files
   install -Dm644 "$pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
@@ -32,3 +32,4 @@ package() {
   cp -r "$pkgname/"* "$pkgdir/usr/share/$pkgname"
 }
 
+# vim:set ts=2 sw=2 et:
